@@ -1,13 +1,13 @@
 *** Error 18 "main.c" Line 40(10,46): File can not be opened
     Not in local "main.h"
-    Not in local "C:\Users\HP_\Desktop\Proyectos-EDU-CIAA\Ejemplos_sapi_jony\ej03_sapi_bm_blinky_tecla\src\main.h"
+    Not in local "C:\Users\HP_\Desktop\Proyectos-EDU-CIAA\Ejemplos_sapi_jony\ej02_sapi_bm_blinky\src\main.h"
     Not in last "main.h"
     Not in project "C:\Users\HP_\Desktop\Proyectos-EDU-CIAA\Ejemplos_sapi_jony\ej02_sapi_bm_blinky\src\main.h"
     Not in ";C:\Program Files (x86)\PICC\Devices\main.h"
     Not in "C:\Program Files (x86)\PICC\Drivers\main.h"
 *** Error 18 "main.c" Line 42(10,47): File can not be opened
     Not in local "sAPI.h"
-    Not in local "C:\Users\HP_\Desktop\Proyectos-EDU-CIAA\Ejemplos_sapi_jony\ej03_sapi_bm_blinky_tecla\src\sAPI.h"
+    Not in local "C:\Users\HP_\Desktop\Proyectos-EDU-CIAA\Ejemplos_sapi_jony\ej02_sapi_bm_blinky\src\sAPI.h"
     Not in last "sAPI.h"
     Not in project "C:\Users\HP_\Desktop\Proyectos-EDU-CIAA\Ejemplos_sapi_jony\ej02_sapi_bm_blinky\src\sAPI.h"
     Not in ";C:\Program Files (x86)\PICC\Devices\sAPI.h"
