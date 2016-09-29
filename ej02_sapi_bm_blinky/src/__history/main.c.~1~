@@ -92,9 +92,9 @@ int main(void){
       /* Prendo el led azul */
       digitalWrite( LEDB, ON );
       delay (500);
-      digitalWrite( LED2, ON );
-      delay(500);
       digitalWrite( LED1, ON );
+      delay(500);
+      digitalWrite( LED2, ON );
       delay(500);
       digitalWrite( LED3, ON );
 
