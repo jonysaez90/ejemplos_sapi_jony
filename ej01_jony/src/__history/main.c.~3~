@@ -91,7 +91,7 @@ int main(void){
    while(1) {
        int tec=0;
        while(1){
-        if(digitalRead(TEC1)==OFF){            /* control de presionado de tecla*/
+        if(digitalRead(TEC1)==OFF){ 
             tec++;
           while(digitalRead(TEC1)==OFF){     /*controlo que la tecla se presione solo una vez*/
           }

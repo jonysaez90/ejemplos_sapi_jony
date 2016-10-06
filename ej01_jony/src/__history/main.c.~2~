@@ -91,62 +91,73 @@ int main(void){
    while(1) {
        int tec=0;
        while(1){
-        if(digitalRead(TEC1)==OFF){            /* control de presionado de tecla*/
-            tec++;
-          while(digitalRead(TEC1)==OFF){     /*controlo que la tecla se presione solo una vez*/
-          }
-          if(tec==1){                        /*si la tecla se presiona una vez enciendo led 1*/
-             digitalWrite(LED1,ON);
-          }
-          if(tec==3){                        /* si la tecla se presiona tres veces apago led 2*/
-             digitalWrite(LED1,OFF);
-             tec=0;
-          }
-        }
-        //------------------
-        if(digitalRead(TEC2)==OFF){
-                tec++;
-               while(digitalRead(TEC2)==OFF){         /*controlo que la tecla se presione solo una vez*/
-               }
-               if(tec==1){                            /*si la tecla se presiona una vez enciendo led 2*/
-                digitalWrite(LED2,ON);
-               }
-               if(tec==3){                             /* si la tecla se presiona tres veces apago led 2*/
-                digitalWrite(LED2,OFF);
-                tec=0;
-               }
-            }
-        if(digitalRead(TEC3)==OFF){
-                tec++;
-               while(digitalRead(TEC3)==OFF){           /* controlo que la tecla se presione solo una vez*/
-               }
-               if(tec==1){                              /*si la tecla se presiona una vez enciendo led 3*/
-                digitalWrite(LED3,ON);
-               }
-               if(tec==3){
-                digitalWrite(LED3,OFF);                 /*si la tecla se presiona tres veces apago led 3*/
-                tec=0;
-               }
-            }
-     
-        if(digitalRead(TEC4)==OFF){
-                tec++;
-               while(digitalRead(TEC4)==OFF){            /* controlo que la tecla se presione solo una vez */
-               }
-               if(tec==1){                               /* si la tecla se presiona una vez enciendo led azul*/
-                digitalWrite(LEDB,ON);
-               }
-               if(tec==3){                               /* si la tecla se presiona tres veces apago led azul*/
-                digitalWrite(LEDB,OFF);
-                tec=0;
-               }
-            }
-        //------------------
+		  if(digitalRead(TEC1)==OFF){
+			   tec++;
+			 while(digitalRead(TEC1)==OFF){
+			 }
+			 if(tec==1){
+				 digitalWrite(LED1,ON);
+			 }
+			 if(tec==3){
+				 digitalWrite(LED1,OFF);
+				 tec=0;
+			 }
+		  }
+		  //------------------
+		  if(digitalRead(TEC2)==OFF){
+					 tec++;
+				   while(digitalRead(TEC2)==OFF){
+				   }
+				   if(tec==1){
+					 digitalWrite(LED2,ON);
+				   }
+				   if(tec==3){
+					 digitalWrite(LED2,OFF);
+					 tec=0;
+				   }
+				}
+		  if(digitalRead(TEC2)==OFF){
+					 tec++;
+				   while(digitalRead(TEC2)==OFF){
+				   }
+				   if(tec==1){
+					 digitalWrite(LED2,ON);
+				   }
+				   if(tec==3){
+					 digitalWrite(LED2,OFF);
+					 tec=0;
+				   }
+				}
+		  if(digitalRead(TEC3)==OFF){
+					 tec++;
+				   while(digitalRead(TEC3)==OFF){
+				   }
+				   if(tec==1){
+					 digitalWrite(LED3,ON);
+				   }
+				   if(tec==3){
+					 digitalWrite(LED3,OFF);
+					 tec=0;
+				   }
+				}
+		  if(digitalRead(TEC4)==OFF){
+					 tec++;
+				   while(digitalRead(TEC4)==OFF){
+				   }
+				   if(tec==1){
+					 digitalWrite(LEDB,ON);
+				   }
+				   if(tec==3){
+					 digitalWrite(LEDB,OFF);
+					 tec=0;
+				   }
+				}
+		  //------------------
 
-      /* NO DEBE LLEGAR NUNCA AQUI, debido a que a este programa no es llamado
-        por ningun S.O. */
+	   /* NO DEBE LLEGAR NUNCA AQUI, debido a que a este programa no es llamado
+		  por ningun S.O. */
 
-      }
+	   }
    }
    return 0 ;
 }
