@@ -1,0 +1,50 @@
+*** Error 18 "main.c" Line 40(10,46): File can not be opened
+    Not in local "main.h"
+    Not in local "C:\Users\HP_\Desktop\Ejemplos_sapi_jony\ej01_jony\src\main.h"
+    Not in last "main.h"
+    Not in project "C:\Users\HP_\Desktop\Ejemplos_sapi_jony\ej01_jony\src\main.h"
+    Not in ";C:\Program Files (x86)\PICC\Devices\main.h"
+    Not in "C:\Program Files (x86)\PICC\Drivers\main.h"
+*** Error 18 "main.c" Line 42(10,47): File can not be opened
+    Not in local "sAPI.h"
+    Not in local "C:\Users\HP_\Desktop\Ejemplos_sapi_jony\ej01_jony\src\sAPI.h"
+    Not in last "sAPI.h"
+    Not in project "C:\Users\HP_\Desktop\Ejemplos_sapi_jony\ej01_jony\src\sAPI.h"
+    Not in ";C:\Program Files (x86)\PICC\Devices\sAPI.h"
+    Not in "C:\Program Files (x86)\PICC\Drivers\sAPI.h"
+*** Error 128 "main.c" Line 42(10,17): A #DEVICE required before this line
+*** Error 12 "main.c" Line 64(15,16): Undefined identifier  -- boardConfig
+*** Error 12 "main.c" Line 67(17,18): Undefined identifier  -- digitalConfig
+*** Error 12 "main.c" Line 70(17,18): Undefined identifier  -- digitalConfig
+*** Error 12 "main.c" Line 71(17,18): Undefined identifier  -- digitalConfig
+*** Error 12 "main.c" Line 72(17,18): Undefined identifier  -- digitalConfig
+*** Error 12 "main.c" Line 73(17,18): Undefined identifier  -- digitalConfig
+*** Error 12 "main.c" Line 75(17,18): Undefined identifier  -- digitalConfig
+*** Error 12 "main.c" Line 78(17,18): Undefined identifier  -- digitalConfig
+*** Error 12 "main.c" Line 79(17,18): Undefined identifier  -- digitalConfig
+*** Error 12 "main.c" Line 80(17,18): Undefined identifier  -- digitalConfig
+*** Error 12 "main.c" Line 81(17,18): Undefined identifier  -- digitalConfig
+*** Error 12 "main.c" Line 82(17,18): Undefined identifier  -- digitalConfig
+*** Error 12 "main.c" Line 83(17,18): Undefined identifier  -- digitalConfig
+*** Error 12 "main.c" Line 85(17,18): Undefined identifier  -- digitalConfig
+*** Error 12 "main.c" Line 88(4,10): Undefined identifier   bool_t
+*** Error 12 "main.c" Line 94(21,22): Undefined identifier  -- digitalRead
+*** Error 12 "main.c" Line 96(27,28): Undefined identifier  -- digitalRead
+*** Error 12 "main.c" Line 100(25,26): Undefined identifier  -- digitalWrite
+*** Error 12 "main.c" Line 104(25,26): Undefined identifier  -- digitalWrite
+*** Error 12 "main.c" Line 107(23,24): Undefined identifier  -- digitalWrite
+*** Error 12 "main.c" Line 110(22,23): Undefined identifier  -- digitalRead
+*** Error 12 "main.c" Line 112(33,34): Undefined identifier  -- digitalRead
+*** Error 12 "main.c" Line 116(31,32): Undefined identifier  -- digitalWrite
+*** Error 12 "main.c" Line 120(31,32): Undefined identifier  -- digitalWrite
+*** Error 12 "main.c" Line 123(29,30): Undefined identifier  -- digitalWrite
+*** Error 12 "main.c" Line 126(25,26): Undefined identifier  -- digitalRead
+*** Error 12 "main.c" Line 128(37,38): Undefined identifier  -- digitalRead
+*** Error 12 "main.c" Line 132(35,36): Undefined identifier  -- digitalWrite
+*** Error 12 "main.c" Line 136(35,36): Undefined identifier  -- digitalWrite
+*** Error 12 "main.c" Line 139(33,34): Undefined identifier  -- digitalWrite
+*** Error 12 "main.c" Line 142(29,30): Undefined identifier  -- digitalRead
+*** Error 12 "main.c" Line 144(40,41): Undefined identifier  -- digitalRead
+*** Error 12 "main.c" Line 148(38,39): Undefined identifier  -- digitalWrite
+*** Error 12 "main.c" Line 152(38,39): Undefined identifier  -- digitalWrite
+*** Error 12 "main.c" Line 155(36,37): Undefined identifier  -- digitalWrite
