@@ -65,7 +65,14 @@
  *                        remove trailing spaces
  * 20140731 v0.0.1   PR   first functional version
  */
+/*
+ * https://groups.google.com/forum/#!searchin/ciaa-firmware/boolean%7Csort:relevance/ciaa-firmware/SNLmTVZbIkk/iSPYr-l-EAAJ
+ * DICE QUE En concreto, el problema con la nueva lpcopen es que define TRUE, FALSE y boolean de forma que chocan con las definiciones del RTOS.
 
+	Hay tres soluciones.
+
+*UNA DE ELLAS ES Eliminar las definiciones de TRUE/FALSE/boolean de lpcopen (no muy limpio pero aceptable)
+*/
 /*==================[inclusions]=============================================*/
 #include "os.h"               /* <= operating system header */
 #include "ciaaPOSIX_stdio.h"  /* <= device handler header */
