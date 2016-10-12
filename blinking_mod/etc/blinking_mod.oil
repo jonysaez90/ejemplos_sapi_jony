@@ -73,7 +73,7 @@ OSEK OSEK {
       EVENT = POSIXE;
    }
 
-   TASK PeriodicTask {
+   TASK PeriodicTask2 {
       PRIORITY = 2;
       ACTIVATION = 1;
       STACK = 512;
@@ -86,7 +86,7 @@ OSEK OSEK {
    ALARM ActivatePeriodicTask {
       COUNTER = HardwareCounter;
       ACTION = ACTIVATETASK {
-         TASK = PeriodicTask;
+         TASK = PeriodicTask2;
       }
    }
 

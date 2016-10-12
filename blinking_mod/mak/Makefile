@@ -41,16 +41,16 @@ PROJECT_NAME               = $(lastword $(subst $(DS), , $(PROJECT_PATH)))
 $(PROJECT_NAME)_SRC_PATH  += $(PROJECT_PATH)$(DS)src
 # include path
 INC_FILES            += $(PROJECT_PATH)$(DS)inc
-INC_FILES            += modules$(DS)sapi_bm$(DS)inc$(DS)sAPI_Board.h
-INC_FILES            += modules$(DS)sapi_bm$(DS)inc$(DS)sAPI_Datatypes.h
-INC_FILES            += modules$(DS)sapi_bm$(DS)inc$(DS)sAPI_DigitalIO.h
-INC_FILES            += modules$(DS)sapi_bm$(DS)inc$(DS)sAPI_PeripheralMap.h
-INC_FILES            += modules$(DS)sapi_bm$(DS)inc$(DS)sAPI.h
+#INC_FILES            += modules$(DS)sapi_bm$(DS)inc$(DS)sAPI_Board.h
+#INC_FILES            += modules$(DS)sapi_bm$(DS)inc$(DS)sAPI_DataTypes.h
+#INC_FILES            += modules$(DS)sapi_bm$(DS)inc$(DS)sAPI_DigitalIO.h
+#INC_FILES            += modules$(DS)sapi_bm$(DS)inc$(DS)sAPI_PeripheralMap.h
+#INC_FILES            += modules$(DS)sapi_bm$(DS)inc$(DS)sAPI.h
 # library source files
 SRC_FILES            += $(wildcard $($(PROJECT_NAME)_SRC_PATH)$(DS)*.c)
-SRC_FILES            += $(wildcard $modules$(DS)sapi_bm$(DS)src$(DS)sAPI_Board.c)
-SRC_FILES            += $(wildcard $modules$(DS)sapi_bm$(DS)src$(DS)sAPI_Datatypes.c)
-SRC_FILES            += $(wildcard $modules$(DS)sapi_bm$(DS)src$(DS)sAPI_DigitalIO.c)
+#SRC_FILES            += $(wildcard $modules$(DS)sapi_bm$(DS)src$(DS)sAPI_Board.c)
+#SRC_FILES            += $(wildcard $modules$(DS)sapi_bm$(DS)src$(DS)sAPI_Datatypes.c)
+#SRC_FILES            += $(wildcard $modules$(DS)sapi_bm$(DS)src$(DS)sAPI_DigitalIO.c)
 
 
 # configuration for OSEK-OS
@@ -61,5 +61,12 @@ MODS ?= modules$(DS)posix           \
         modules$(DS)ciaak           \
         modules$(DS)drivers         \
         modules$(DS)rtos            \
-        modules$(DS)libs
+        modules$(DS)libs			\
+        
+        #modules$(DS)sapi_bm$(DS)inc$(DS)sAPI_DataTypes.h
+      #  modules$(DS)sapi_bm$(DS)inc$(DS)sAPI_Board.h	\
+      #  modules$(DS)sapi_bm$(DS)inc$(DS)sAPI_DataTypes.h	\
+      #  modules$(DS)sapi_bm$(DS)inc$(DS)sAPI_DigitalIO.h	\
+      #  modules$(DS)sapi_bm$(DS)inc$(DS)sAPI_PeripheralMap.h	
+        
 

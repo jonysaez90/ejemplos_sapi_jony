@@ -69,12 +69,10 @@
 /*==================[inclusions]=============================================*/
 #include "os.h"               /* <= operating system header */
 #include "ciaaPOSIX_stdio.h"  /* <= device handler header */
-//*#include "ciaaPOSIX_string.h" /* <= string header */
+#include "ciaaPOSIX_string.h" /* <= string header */
 #include "ciaak.h"            /* <= ciaa kernel header */
 #include "blinking_mod.h"         /* <= own header */
-#include "sAPI_PeripheralMap.h"
-#include "sAPI_DataTypes.h"
-//#include "sAPI.h"
+#include "chip.h"
 /*==================[macros and definitions]=================================*/
 
 /*==================[internal data declaration]==============================*/
@@ -107,7 +105,16 @@ int main(void)
 {
    /* Starts the operating system in the Application Mode 1 */
    /* This example has only one Application Mode */
-   StartOS(AppMode1);
+	Chip_GPIO_Init(LPC_GPIO_PORT);
+		Chip_SCU_PinMux(
+		            2,
+		            10,
+		            SCU_MODE_INACT | SCU_MODE_ZIF_DIS,
+		            SCU_MODE_FUNC0
+		         );
+		Chip_GPIO_SetDir( LPC_GPIO_PORT, 0, ( 1 << 14 ), 1 );
+		Chip_GPIO_SetPinState( LPC_GPIO_PORT, 0, 14, 0);
+	StartOS(AppMode1);
 
    /* StartOs shall never returns, but to avoid compiler warnings or errors
     * 0 is returned */
@@ -170,30 +177,14 @@ TASK(InitTask)
  * ActivatePeriodicTask expires.
  *
  */
-TASK(PeriodicTask)
+TASK(PeriodicTask2)
 {
-   /*uint8_t outputs;
-
-   /* write blinking message */
-   //ciaaPOSIX_printf("Blinking\n");
-
-   /* blink output */
-   /*ciaaPOSIX_read(fd_out, &outputs, 1);
-   outputs ^= 0x20;
-   ciaaPOSIX_write(fd_out, &outputs, 1);
-
-   /* terminate task */
-
-    /* Prendo el led azul */
-    digitalWrite( LEDB, ON );
-
-    delay(500);
-
-    /* Apago el led azul */
-    digitalWrite( LEDB, OFF );
-
-    delay(500);
-
+   if(Chip_GPIO_ReadPortBit( LPC_GPIO_PORT, 0, 14 )==TRUE){
+	   Chip_GPIO_SetPinState( LPC_GPIO_PORT, 0, 14, FALSE);
+   }
+   else{
+	   Chip_GPIO_SetPinState( LPC_GPIO_PORT, 0, 14, TRUE);
+   }
 
    TerminateTask();
 }
